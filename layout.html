@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header,footer {
+        background-color: gray;
+        text-align: center;
+    }
+
+    header h1, footer {
+        color: #fff;
+        font-size: 4rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-transform: uppercase;
+    }
+
+    section {
+        justify-content: flex-start;
+        display: flex;
+        /* gap: 10px; */
+
+    }
+    nav{
+        padding: 5px 5rem 5px 5px;
+        background-color: darkgray;
+        width: 400px;
+    }
+   nav a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+   }
+   section .main-content{
+    background-color: lightgray;
+    padding-left: 10px;
+    padding-right: 20%;
+    padding-bottom: 3rem;
+
+   }
+   section .main-content h1{
+    font-size: 2rem;
+    color: #383737;
+    font-family: cursive;
+    margin-bottom: 10px;
+   }
+   section .main-content p{
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+   }
+</style>
+
+<body>
+    <header>
+        <h1>web development</h1>
+    </header>
+    <section>
+        <!-- navigation and main content -->
+        <nav class="nav-link">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="main-content">
+            <h1>London</h1>
+
+            <p>
+                London is the capital city of England. It is the most populous city in the United Kingdom, with a
+                metropolitan area of over 13 million inhabitants.
+            </p>
+
+            <p>
+                Standing on the River Thames, London has been a major settlement for two millennia, its history going
+                back to its founding by the Romans, who named it Londinium
+            </p>
+        </div>
+    </section>
+
+
+    <footer>
+        <h4>FOOTER</h4>
+    </footer>
+</body>
+
+</html>
